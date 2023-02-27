@@ -27,8 +27,12 @@ public class TV {
 	public void setVolumen(int vol) {
 		volumen = vol;
 		}
-	public void setCanal(int can) {
-		canal = can;
+	public void setCanal(int can){
+        if (estado == true){
+            if (can >= 1 && can <= 120){
+        this.canal = can;
+		}
+		}
 		}
 	public void setEstado(boolean estad) {
 		estado = estad;
